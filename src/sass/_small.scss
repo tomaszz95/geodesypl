@@ -1,0 +1,177 @@
+@media (min-width: 36rem) {
+	html {
+		scroll-padding-top: 190px;
+	}
+
+	.section-title {
+		font-size: 2.1rem;
+	}
+
+	.topbar {
+		font-size: $font-size-18px;
+	}
+
+	.nav-mobile {
+		&__logo {
+			a {
+				img {
+					width: 5.7rem;
+				}
+			}
+		}
+
+		&__text {
+			font-size: $font-size-20px;
+			padding: 0 1.3rem;
+			margin-left: 1.3rem;
+		}
+		&__item {
+			font-size: $font-size-20px;
+		}
+
+		.burger-btn {
+			padding: 1.9rem;
+		}
+
+		&__items {
+			top: 113px;
+		}
+
+		.burger-btn {
+			&__box {
+				width: 3.1rem;
+				height: 1.9rem;
+			}
+		}
+	}
+
+	.info {
+		&__text {
+			font-size: $font-size-18px;
+		}
+	}
+
+	.news {
+		&__box {
+			margin-top: 2.5rem;
+		}
+	
+		&__properties {
+			font-size: $font-size-20px;
+		}
+	
+		&__text {
+			margin-top: 1.3rem;
+		}
+	
+		&__title {
+			font-size: 1.5rem;
+		}
+	}
+
+	.more-info {
+		&__box {
+			&-img {
+				&-title {
+					font-size: 1.7rem;
+				}
+				&-info {
+					font-size: $font-size-20px;
+					i {
+						margin-right: 0.5rem;
+					}
+				}
+			}
+	
+			&-info {
+				&-list {
+					&-item {
+						font-size: $font-size-16px;
+					}
+
+					p {
+						font-size: $font-size-18px;
+					}
+
+					.firm-name {
+						font-size: 1.4rem;
+						margin-top: 0.4rem;
+					}
+
+					i {
+						margin-right: 0.4rem;
+						font-size: $font-size-20px;
+					}
+
+					a {
+						text-decoration: none;
+						color: $pure-white;
+						font-size: $font-size-20px;
+					}
+				}
+			}
+		}
+	}
+
+	.contact {
+		&__box {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-bottom: 1.3rem;
+		}
+
+		&__form {
+			width: 50%;
+			padding: 0rem 0.6rem;
+		}
+	}
+
+	.services {
+		padding: 1.9rem 1.3rem;
+	}
+
+	.services__boxes {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	.services__box {
+		width: 45%;
+		height: 26rem;
+		margin: 2.5rem 0.8rem;
+	}
+
+	.aboutus__team {
+		&.section-padding {
+			padding: 1.9rem;
+		}
+
+		&-person {
+			margin: 0;
+		}
+	
+		&-button {
+			font-size: $font-size-17px;
+			.name {
+				margin-bottom: 0.6rem;
+				i {
+					margin-right: 0.4rem;
+				}
+			}
+		}
+	
+		&-text {
+			font-size: $font-size-16px;
+			
+		}
+	
+		&-openh {
+			&-list {
+				&-item {
+					font-size: $font-size-17px;
+				}
+			}
+		}
+	}
+}

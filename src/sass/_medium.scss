@@ -1,0 +1,349 @@
+@media (min-width: 48rem) {
+	html {
+		scroll-padding-top: 205px;
+	}
+
+	.section-title {
+		font-size: 2rem;
+	}
+
+	.topbar {
+		padding: 0.6rem;
+		flex-direction: row;
+		text-align: center;
+		justify-content: space-around;
+		align-items: center;
+		font-size: $font-size-20px;
+
+		.email-box {
+			margin-bottom: 0;
+		}
+
+		a {
+			margin-left: 0.6rem;
+		}
+	}
+
+	.nav {
+		overflow: hidden;
+	}
+
+	.nav-mobile {
+		display: none;
+	}
+
+	// @@@@@@@@@@@@@     NAWIGACJA NA KOMPA     @@@@@@@@@@@@@@@
+
+	.nav-comp {
+		position: relative;
+		top: 0;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: $secondary-color;
+		padding: 0.3rem 1rem;
+
+		&__logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			a {
+				text-decoration: none;
+				img {
+					width: 7rem;
+				}
+			}
+		}
+
+		&__text {
+			padding: 0.6rem;
+			color: $complementary-color;
+			font-size: 1.4rem;
+			&--blue {
+				color: $main-color;
+			}
+		}
+
+		&__items {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&__item {
+			position: relative;
+			padding: 1.3rem 0.6rem;
+			color: $secondary-color;
+			text-decoration: none;
+			text-transform: uppercase;
+			cursor: pointer;
+			transition: color 0.4s;
+			text-align: center;
+			font-size: $font-size-18px;
+
+			&::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				height: 2px;
+				width: 100%;
+				transform: scaleX(0);
+				transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+				background-color: $main-color;
+			}
+
+			&:hover::before {
+				transform: scaleX(1);
+			}
+		}
+
+		&__item:hover {
+			color: $complementary-color;
+		}
+	}
+
+	.header {
+		&__text {
+			font-size: 2.5rem;
+
+			&--more {
+				display: inline;
+			}
+		}
+	}
+
+	.section-title--two {
+		margin-top: 9.3rem;
+	}
+
+	.info {
+		padding: 1.9rem 1.9rem 6.9rem;
+		&__text {
+			margin-top: 2.5rem;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			text-align: left;
+			&--two {
+				text-align: right;
+			}
+		}
+
+		&__btn {
+			position: absolute;
+			bottom: -90px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 80%;
+			margin-top: 1.9rem;
+		}
+
+		&__img {
+			border-radius: 8px;
+			display: block;
+			width: 50%;
+			margin-left: 1.3rem;
+			transition: transform 0.4s;
+			&--two {
+				margin-left: 0;
+				margin-right: 1.3rem;
+			}
+			&--two {
+				order: -10;
+			}
+			&:hover {
+				transform: scale(1.06);
+			}
+		}
+	}
+
+	.news {
+		&__boxes {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
+		&__box {
+			margin: 1.3rem;
+		}
+
+		&__title {
+			font-size: 1.4rem;
+		}
+	}
+
+	.more-info {
+		&__box {
+			width: 40%;
+			margin: 1.9rem;
+			height: 500px;
+			&-img {
+				&-title {
+					font-size: 1.7rem;
+				}
+				&-info {
+					font-size: $font-size-20px;
+					i {
+						margin-right: 0.5rem;
+					}
+				}
+			}
+
+			&-info {
+				&-list {
+					&-item {
+						font-size: $font-size-16px;
+					}
+				}
+			}
+		}
+	}
+
+	.contact {
+		&__title {
+			font-size: $font-size-20px;
+		}
+	}
+
+	.footer {
+		&__boxes {
+			flex-direction: row;
+		}
+
+		&__box {
+			width: 50%;
+			padding: 0.6rem 1.3rem;
+		}
+	}
+
+	// @@@@@@@@@@@@@     PODSTRONA 404    @@@@@@@@@@@@@@@
+
+	.error-img {
+		max-width: 450px;
+		top: 8%;
+		margin-bottom: 0;
+	}
+
+	.error-content {
+		margin-top: 8.1rem;
+	}
+
+	.error-ops {
+		font-size: 2.5rem;
+	}
+
+	.error-title {
+		font-size: $font-size-20px;
+	}
+
+	.error-btn {
+		font-size: $font-size-20px;
+	}
+
+	.error-footer {
+		font-size: $font-size-18px;
+	}
+
+	.services {
+		padding: 1.9rem .13rem;
+	}
+
+	.services__boxes {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.services__box {
+		width: 45%;
+		height: 23rem;
+		margin: 2.5rem 0.8rem;
+
+		i {
+			font-size: 2.8rem;
+			top: 2.2rem;
+			right: 2.2rem;
+		}
+
+		.services__title {
+			font-size: $font-size-20px;
+			margin: 6.3rem 0 1.9rem;
+		}
+
+		.services__text {
+			font-size: $font-size-16px;
+		}
+	}
+
+	.aboutus__firm {
+		&--text {
+			&-title {
+				font-size: 1.4rem;
+			}
+
+			&-content {
+				font-size: $font-size-17px;
+			}
+		}
+	}
+
+	.aboutus__details {
+		&-popup {
+			&--img {
+				top: 60%;
+				max-height: 75%;
+				max-width: 75%;
+			}
+
+			&--close {
+				top: 23%;
+				right: 3%;
+				font-size: 2.4rem;
+				height: 3rem;
+				width: 3rem;
+				line-height: 3rem;
+			}
+			&--arrow {
+				bottom: 35%;
+				font-size: 2.4rem;
+				height: 3rem;
+				width: 3rem;
+				line-height: 3rem;
+				&-prev {
+					left: 3%;
+				}
+
+				&-next {
+					right: 3%;
+				}
+			}
+		}
+	}
+	
+	.aboutus__details-rel {
+		&-btn {
+			padding: 0.7rem 1.2rem;
+			font-size: 1.6rem;
+		}
+	}
+	
+	.aboutus__team {
+		&-button {
+			font-size: $font-size-18px;
+		}
+	
+		&-text {
+			font-size: $font-size-17px;
+			
+		}
+	
+		&-openh {
+			&-list {
+				&-item {
+					font-size: $font-size-18px;
+				}
+			}
+		}
+	}
+}
