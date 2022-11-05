@@ -1,6 +1,6 @@
 # Geodesy site
 
-Hello, that's my first completely finished and functional website. 
+Hello, I present to you my website project - completely finished and functional website. 
 I work as a land surveyor in a moment of creating the page, so I decided to develop a website for a made-up geodesic company.
 The page is created in **Polish language**.
 
