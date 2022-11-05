@@ -1,11 +1,9 @@
 AOS.init({
-    startEvent: 'DOMContentLoaded',
-    offset: 75,
-    once: true,
-    duration: 600,
-});
-
-
+	startEvent: 'DOMContentLoaded',
+	offset: 75,
+	once: true,
+	duration: 600,
+})
 
 // The MIT License (MIT)
 

@@ -1,0 +1,59 @@
+.services {
+	h2 {
+		margin-top: 1.3rem;
+	}
+}
+
+.services-header {
+	height: 80vh;
+	.header__img {
+		background-image: url('../img/servicesHeroMini.jpg');
+		background-position: 28%;
+	}
+}
+
+.services__boxes {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.services__box {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 26rem;
+	color: $pure-white;
+	padding: 1.3rem;
+	background-image: $light-blue-gradient;
+	margin: 1.3rem 0;
+	border-radius: 8px;
+	&:nth-child(3n + 1) {
+		background-image: $purple-gradient;
+	}
+	&:nth-child(3n + 2) {
+		background-image: $blue-gradient;
+	}
+
+	i {
+		font-size: 3rem;
+		position: absolute;
+		top: 1.6rem;
+		right: 1.6rem;
+	}
+
+	.services__title {
+		text-transform: uppercase;
+		font-size: 1.4rem;
+		margin: 5rem 0 1.9rem;
+		text-align: center;
+	}
+
+	.services__text {
+		font-size: $font-size-16px;
+	}
+}

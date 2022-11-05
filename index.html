@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pl" dir="ltr">
-
 <head>
     <meta charset="UTF-8">
     <title>Geodeta Pińczów - ASGeodezja</title>
@@ -12,14 +11,12 @@
     <meta name="description"
         content="Świadczymy najwyższej jakości usługi geodezyjne - mapy, inwentaryzacje, wytyczenia, podziały. Oferujemy atrakcyjne ceny, rzetelność i pełny profesjonalizm.">
     <link rel="shortcut icon" href="favicon.png" type="image/png">
-    <script defer src="./dist/js/main.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8fa14ea516.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./dist/css/main.min.css">
 </head>
-
 <body>
 
     <div class="topbar">
@@ -43,7 +40,7 @@
                 <span class="nav-mobile__text--blue">AS</span>Geodezja
             </p>
         </div>
-        <button class="burger-btn" title="Otwieranie nawigacji mobilnej">
+        <button class="burger-btn" aria-label="Otwieranie nawigacji mobilnej">
             <div class="burger-btn__box">
                 <div class="burger-btn__bars"></div>
             </div>
@@ -82,7 +79,9 @@
         <a href="#info" class="header__arrow" title="Strzałka przenosząca na sekcję informacje"><i
                 class="fa-solid fa-arrow-down"></i></a>
     </header>
+
     <main>
+        <!-- INFO SECTION -->
         <section class="info section-padding" id="info">
             <div class="wrapper">
                 <h2 class="section-title">Usługi</h2>
@@ -126,6 +125,7 @@
             </div>
         </section>
 
+        <!-- NEWS SECTION -->
         <section class="news section-padding" id="news">
             <div class="wrapper">
                 <h2 class="section-title">Aktualności</h2>
@@ -241,6 +241,7 @@
             </div>
         </section>
 
+        <!-- MORE INFO SECTION -->
         <section class="more-info section-padding">
             <div class="wrapper">
                 <h2 class="section-title">Dodatkowe informacje</h2>
@@ -319,7 +320,7 @@
                         </div>
                     </div>
                     <div class="more-info__rodo">
-                        <button class="more-info__rodo-btn"><i class="fa-solid fa-arrow-down"></i>Informacje odnośnie
+                        <button class="more-info__rodo-btn" aria-label='Przycisk do rozwijania informacji odnośnie RODO'><i class="fa-solid fa-arrow-down"></i>Informacje odnośnie
                             przetrwarzania danych osobowych<i class="fa-solid fa-arrow-down"></i></button>
                         <div class="more-info__rodo-info">
                             <p class="more-info__rodo-text-item bold">Informacja z dnia 25.05.2018 roku</p>
@@ -333,9 +334,9 @@
                                 przepływu takich danych oraz uchylenia dyrektywy 95/46/WE</p>
                             <p class="more-info__rodo-text-item">W związku z powyższym informujemy, że:</p>
                             <p class="more-info__rodo-text-item">1. Administratorem Pani / Pana danych osobowy jest
-                                Lorem Ipsum zamieszkały w lorem przy ul. lorem ipsum dolor sit amet.,</p>
+                                Tomasz Żuber zamieszkały w Pińczowie przy ul. Nieistniejącej 99, 28-400 Pińczów,</p>
                             <p class="more-info__rodo-text-item">2. Osobą odpowiedzialną za przechowywanie danych jest
-                                Lorem, ipsum dolor.: tel. 00 000 00 00, e-mail: loem@poczta.onet.pl,</p>
+                                Tomasz Żuber: tel. 00 000 00 00, e-mail: asgeodezjapinczow@onet.eu,</p>
                             <p class="more-info__rodo-text-item">3. Pani / Pana dane osobowe mogą być przetwarzane w
                                 zbiorach
                                 danych zgodnie z celem pracy geodezyjnej, a danych tych nie publikujemy w
@@ -409,9 +410,9 @@
         </div>
         <div class="map__container">
             <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15395.209072142208!2d-45.42305990387456!3d61.16244122734965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4eabe1a572f52967%3A0x122510319531c2c!2sPort%20lotniczy%20Narsarsuaq!5e0!3m2!1spl!2spl!4v1667650635660!5m2!1spl!2spl"
-            style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade" class="google-map" aria-label="Mapa z googlemaps z lokalizacją firmy"></iframe>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15395.209072142208!2d-45.42305990387456!3d61.16244122734965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4eabe1a572f52967%3A0x122510319531c2c!2sPort%20lotniczy%20Narsarsuaq!5e0!3m2!1spl!2spl!4v1667650635660!5m2!1spl!2spl"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                class="google-map" aria-label="Mapa z googlemaps z lokalizacją firmy"></iframe>
         </div>
     </div>
 </section>
@@ -436,6 +437,8 @@
         <p class="footer__text">&copy; <span class="footer__year"></span> by Tomasz Żuber</p>
     </div>
 </footer>
+    <script src="./dist/js/mainsite.min.js"></script>
+    <script src="./dist/js/navandyear.min.js"></script>
 </body>
 
 </html>

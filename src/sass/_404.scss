@@ -1,0 +1,77 @@
+.err-body {
+	height: 100vh;
+	position: relative;
+}
+
+.err-nav {
+	top: 0;
+}
+
+.error-page {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.error-img {
+	width: 70%;
+	max-width: 300px;
+	position: relative;
+	top: 5%;
+	margin-bottom: 2rem;
+}
+
+.error-content {
+	margin-top: 1.3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.error-ops {
+	margin: 0.6rem 0;
+	font-size: $font-size-20px;
+	color: $main-color;
+}
+
+.error-title {
+	padding: 0.6rem 1.3rem;
+	text-align: center;
+	font-size: $font-size-16px;
+}
+
+.error-btn {
+	padding: 0.6rem 1.3rem;
+	margin-top: 0.6rem;
+	background-color: transparent;
+	border: 3px solid $main-color;
+	font-size: $font-size-16px;
+	text-decoration: none;
+	color: $main-color;
+	font-weight: bold;
+	border-radius: 8px;
+	transition: background-color 0.4s, color 0.4s;
+	&:hover {
+		color: $pure-white;
+		background-color: $main-color;
+	}
+}
+
+.error-footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	padding: 1.3rem;
+	background-color: $secondary-color;
+	color: $pure-white;
+	width: 100%;
+	margin-bottom: 0;
+}

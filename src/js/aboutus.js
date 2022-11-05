@@ -4,19 +4,19 @@ const popupClose = document.querySelector('.aboutus__details-popup--close')
 const popupImg = document.querySelector('.aboutus__details-popup--img')
 const arrowLeft = document.querySelector('.aboutus__details-popup--arrow-prev')
 const arrowRight = document.querySelector('.aboutus__details-popup--arrow-next')
-let currentImgIndex
-
 const sliderBox = document.querySelector('.aboutus__details-rel-slider')
 const leftBtn = document.querySelector('.aboutus__details-rel-btn--prev')
 const rightBtn = document.querySelector('.aboutus__details-rel-btn--next')
 const carouselBox = document.querySelectorAll('.aboutus__details-rel-box')
+let personBtn = document.querySelectorAll('.aboutus__team-button')
+let accordionInfo = document.querySelector('.aboutus__team-allpeople')
+
+let currentImgIndex
 let carouselWidth
 const carouselSpeed = 2000
 let index = 0
 
-let personBtn = document.querySelectorAll('.aboutus__team-button')
-let accordionInfo = document.querySelector('.aboutus__team-allpeople')
-
+// POPUP MANAGING
 const showNextImg = () => {
 	if (currentImgIndex === thumbnails.length - 1) {
 		currentImgIndex = 0
@@ -36,14 +36,7 @@ const showPrevImg = () => {
 }
 
 const closePopup = () => {
-	popup.classList.add('fade-out')
-	setTimeout(() => {
-		popup.classList.add('hidden')
-		popup.classList.remove('fade-out')
-		thumbnails.forEach(element => {
-			element.setAttribute('tabindex', 1)
-		})
-	}, 300)
+	popup.classList.add('hidden')
 }
 
 thumbnails.forEach((thumbnail, index) => {
@@ -64,6 +57,7 @@ thumbnails.forEach((thumbnail, index) => {
 	})
 })
 
+// CAROUSEL
 const handleCarousel = () => {
 	index++
 	changeImage()
@@ -97,6 +91,7 @@ const resetInterval = () => {
 	startCarousel = setInterval(handleCarousel, carouselSpeed)
 }
 
+// TEAM INFO
 function openPersonInfo() {
 	this.nextElementSibling.classList.toggle('active')
 	if (this.nextElementSibling.classList.contains('active')) {
@@ -108,17 +103,14 @@ function openPersonInfo() {
 	}
 }
 
-personBtn.forEach(btn => btn.addEventListener('click', openPersonInfo))
-
 rightBtn.addEventListener('click', handleRightArrow)
-
 leftBtn.addEventListener('click', handleLeftArrow)
 
 popupClose.addEventListener('click', closePopup)
-
 arrowRight.addEventListener('click', showNextImg)
-
 arrowLeft.addEventListener('click', showPrevImg)
+
+personBtn.forEach(btn => btn.addEventListener('click', openPersonInfo))
 
 document.addEventListener('keydown', e => {
 	if (!popup.classList.contains('hidden')) {

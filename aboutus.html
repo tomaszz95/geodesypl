@@ -12,8 +12,6 @@
     <meta name="description"
         content="Świadczymy najwyższej jakości usługi geodezyjne - mapy, inwentaryzacje, wytyczenia, podziały. Oferujemy atrakcyjne ceny, rzetelność i pełny profesjonalizm.">
     <link rel="shortcut icon" href="favicon.png" type="image/png">
-    <script defer src="./dist/js/subpage.min.js"></script>
-    <script defer src="./dist/js/aboutus.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
@@ -44,7 +42,7 @@
                 <span class="nav-mobile__text--blue">AS</span>Geodezja
             </p>
         </div>
-        <button class="burger-btn" title="Otwieranie nawigacji mobilnej">
+        <button class="burger-btn" aria-label="Otwieranie nawigacji mobilnej">
             <div class="burger-btn__box">
                 <div class="burger-btn__bars"></div>
             </div>
@@ -83,6 +81,7 @@
 
     <main>
 
+        <!-- INFO -->
         <section class="aboutus__firm section-padding">
             <div class="wrapper">
                 <h2 class="section-title">Historia i rozwój</h2>
@@ -145,11 +144,13 @@
             <div class="wrapper">
                 <h2 class="section-title">Referencje i realizacje</h2>
                 <div class="underline"></div>
+
+                <!-- REFERENCES -->
                 <div class="aboutus__details-boxes">
                     <div class="aboutus__details-ref">
                         <div class="aboutus__details-gallery">
-                            <img tabindex='0' src="./dist/img/ref1.jpg"
-                                alt="Referencja z firmy abcd" class="aboutus__details-gallery-img">
+                            <img tabindex='0' src="./dist/img/ref1.jpg" alt="Referencja z firmy abcd"
+                                class="aboutus__details-gallery-img">
                             <img tabindex='0' src="./dist/img/ref2.jpg" alt="Referencja z firmy cdef"
                                 class="aboutus__details-gallery-img">
                             <img tabindex='0' src="./dist/img/ref3.jpg" alt="Referencja z firmy ghij"
@@ -167,37 +168,47 @@
                                     class="fa-solid fa-chevron-right"></i></button>
                         </div>
                     </div>
+
+                    <!-- SLIDER -->
                     <div class="aboutus__details-rel">
                         <div class="aboutus__details-rel-slider">
                             <div class="aboutus__details-rel-box active" data-number="1">
-                                <img src="./dist/img/slider1.jpg" alt="Lorem ipsum dolor, sit amet" class="aboutus__details-rel-img">
+                                <img src="./dist/img/slider1.jpg" alt="Lorem ipsum dolor, sit amet"
+                                    class="aboutus__details-rel-img">
                                 <div class="aboutus__details-rel-shadow"></div>
-                                <p class="aboutus__details-rel-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <p class="aboutus__details-rel-text">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                    elit.</p>
                             </div>
                             <div class="aboutus__details-rel-box" data-number="2">
-                                <img src="./dist/img/slider2.jpg" alt="Lorem ipsum dolor, sit amet" class="aboutus__details-rel-img">
+                                <img src="./dist/img/slider2.jpg" alt="Lorem ipsum dolor, sit amet"
+                                    class="aboutus__details-rel-img">
                                 <div class="aboutus__details-rel-shadow"></div>
                                 <p class="aboutus__details-rel-text">Lorem ipsum dolor sit amet consectetur.</p>
                             </div>
                             <div class="aboutus__details-rel-box" data-number="3">
-                                <img src="./dist/img/slider3.jpg" alt="Lorem ipsum dolor, sit amet" class="aboutus__details-rel-img">
+                                <img src="./dist/img/slider3.jpg" alt="Lorem ipsum dolor, sit amet"
+                                    class="aboutus__details-rel-img">
                                 <div class="aboutus__details-rel-shadow"></div>
                                 <p class="aboutus__details-rel-text">Lorem ipsum dolor sit amet consectetur adipisicing.
                                 </p>
                             </div>
                             <div class="aboutus__details-rel-box" data-number="4">
-                                <img src="./dist/img/slider4.jpg" alt="Lorem ipsum dolor, sit amet" class="aboutus__details-rel-img">
+                                <img src="./dist/img/slider4.jpg" alt="Lorem ipsum dolor, sit amet"
+                                    class="aboutus__details-rel-img">
                                 <div class="aboutus__details-rel-shadow"></div>
                                 <p class="aboutus__details-rel-text">Lorem ipsum dolor sit amet consectetur.</p>
                             </div>
                         </div>
-                        <button class="aboutus__details-rel-btn aboutus__details-rel-btn--next">&gt;</button>
-                        <button class="aboutus__details-rel-btn aboutus__details-rel-btn--prev">&lt;</button>
+                        <button class="aboutus__details-rel-btn aboutus__details-rel-btn--next"
+                            aria-label="Następny slajd">&gt;</button>
+                        <button class="aboutus__details-rel-btn aboutus__details-rel-btn--prev"
+                            aria-label="Poprzedni slajd">&lt;</button>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- TEAM -->
         <section class="aboutus__team section-padding">
             <div class="wrapper">
                 <div class="aboutus__team-box">
@@ -206,7 +217,7 @@
                         <div class="underline"></div>
                         <div class="aboutus__team-allpeople">
                             <div class="aboutus__team-person">
-                                <button class="aboutus__team-button one">
+                                <button class="aboutus__team-button one" aria-label="Dane kontaktowe dla Tomasza Żuber">
                                     <p class="name"><i class="fa-solid fa-arrow-down"></i> mgr inż. Tomasz Żuber
                                     </p>
                                     <p class="position">Właściciel firmy / Geodeta uprawiony</p>
@@ -219,7 +230,7 @@
                                 </div>
                             </div>
                             <div class="aboutus__team-person">
-                                <button class="aboutus__team-button two">
+                                <button class="aboutus__team-button two" aria-label="Dane kontaktowe dla Jana Nowaka">
                                     <p class="name"><i class="fa-solid fa-arrow-down"></i> inż. Jan Nowak</p>
                                     <p class="position">Zastępca / Kierownik zespołu do spraw pomiarów
                                         terenowych i obsługi inwestycji</p>
@@ -232,7 +243,8 @@
                                 </div>
                             </div>
                             <div class="aboutus__team-person">
-                                <button class="aboutus__team-button three">
+                                <button class="aboutus__team-button three"
+                                    aria-label="Dane kontaktowe dla Joanny Nowak">
                                     <p class="name"><i class="fa-solid fa-arrow-down"></i> mgr inż. Joanna Nowak</p>
                                     <p class="position">Kierownik zespołu do spraw ewidencji / Geodeta uprawiony</p>
                                 </button>
@@ -244,7 +256,8 @@
                                 </div>
                             </div>
                             <div class="aboutus__team-person">
-                                <button class="aboutus__team-button one">
+                                <button class="aboutus__team-button one"
+                                    aria-label="Dane kontaktowe dla Jana Kowalskiego">
                                     <p class="name"><i class="fa-solid fa-arrow-down"></i> tech. Jan Kowalski</p>
                                     <p class="position">Przygotowanie dokumentów prawnych z zakresu ewidencji /
                                         Sekretariat</p>
@@ -257,7 +270,8 @@
                                 </div>
                             </div>
                             <div class="aboutus__team-person">
-                                <button class="aboutus__team-button two">
+                                <button class="aboutus__team-button two"
+                                    aria-label="Dane kontaktowe dla Joanny Kowalskiej">
                                     <p class="name"><i class="fa-solid fa-arrow-down"></i> mgr inż. Joanna Kowalska</p>
                                     <p class="position">Geodeta specjalista z zakresu ewidencji</p>
                                 </button>
@@ -270,7 +284,8 @@
                                 </div>
                             </div>
                             <div class="aboutus__team-person">
-                                <button class="aboutus__team-button three">
+                                <button class="aboutus__team-button three"
+                                    aria-label="Dane kontaktowe dla Jana Wiśniewskiego">
                                     <p class="name"><i class="fa-solid fa-arrow-down"></i> tech. Jan Wiśniewski</p>
                                     <p class="position">Geodeta terenowy</p>
                                 </button>
@@ -282,8 +297,10 @@
                                 </div>
                             </div>
                             <div class="aboutus__team-person">
-                                <button class="aboutus__team-button one">
-                                    <p class="name"><i class="fa-solid fa-arrow-down"></i> mgr inż. Joanna Wiśniewska</p>
+                                <button class="aboutus__team-button one"
+                                    aria-label="Dane kontaktowe dla Joanny Wiśniewskiej">
+                                    <p class="name"><i class="fa-solid fa-arrow-down"></i> mgr inż. Joanna Wiśniewska
+                                    </p>
                                     <p class="position">Geodeta kameralista</p>
                                 </button>
                                 <div class="aboutus__team-text">
@@ -294,7 +311,7 @@
                                 </div>
                             </div>
                             <div class="aboutus__team-person">
-                                <button class="aboutus__team-button two">
+                                <button class="aboutus__team-button two" aria-label="Dane kontaktowe dla Jana Wójcika">
                                     <p class="name"><i class="fa-solid fa-arrow-down"></i> mgr inż. Jan Wójcik</p>
                                     <p class="position">Geodeta kameralista</p>
                                 </button>
@@ -306,30 +323,36 @@
                                 </div>
                             </div>
                             <div class="aboutus__team-person">
-                                <button class="aboutus__team-button three">
+                                <button class="aboutus__team-button three"
+                                    aria-label="Dane kontaktowe dla Joanny Wójcik">
                                     <p class="name"><i class="fa-solid fa-arrow-down"></i> Joanna Wójcik</p>
                                     <p class="position">Geodeta terenowy</p>
                                 </button>
                                 <div class="aboutus__team-text">
                                     <p class="phone"><i class="fa-solid fa-phone"></i> 777 777 777</p>
 
-                                    <p class="email"><i class="fa-solid fa-envelope"></i> <a href="mailto:joannawojcik@joannawojcik.pl">joannawojcik@joannawojcik.pl</a>
+                                    <p class="email"><i class="fa-solid fa-envelope"></i> <a
+                                            href="mailto:joannawojcik@joannawojcik.pl">joannawojcik@joannawojcik.pl</a>
                                     </p>
                                 </div>
                             </div>
                             <div class="aboutus__team-person">
-                                <button class="aboutus__team-button one">
+                                <button class="aboutus__team-button one"
+                                    aria-label="Dane kontaktowe dla Roberta Lewandowskiego">
                                     <p class="name"><i class="fa-solid fa-arrow-down"></i> Robert Lewandowski</p>
                                     <p class="position">Geodeta terenowy</p>
                                 </button>
                                 <div class="aboutus__team-text">
                                     <p class="phone"><i class="fa-solid fa-phone"></i> 888 888 888</p>
-                                    <p class="email"><i class="fa-solid fa-envelope"></i> <a href="mailto:robertlewandowski@robertlewandowski.pl">robertlewandowski@robertlewandowski.pl</a>
+                                    <p class="email"><i class="fa-solid fa-envelope"></i> <a
+                                            href="mailto:robertlewandowski@robertlewandowski.pl">robertlewandowski@robertlewandowski.pl</a>
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- OPEN HOURS -->
                     <div class="aboutus__team-hours">
                         <h2 class="section-title">Godziny otwarcia</h2>
                         <div class="underline"></div>
@@ -384,9 +407,9 @@
         </div>
         <div class="map__container">
             <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15395.209072142208!2d-45.42305990387456!3d61.16244122734965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4eabe1a572f52967%3A0x122510319531c2c!2sPort%20lotniczy%20Narsarsuaq!5e0!3m2!1spl!2spl!4v1667650635660!5m2!1spl!2spl"
-            style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade" class="google-map" aria-label="Mapa z googlemaps z lokalizacją firmy"></iframe>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15395.209072142208!2d-45.42305990387456!3d61.16244122734965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4eabe1a572f52967%3A0x122510319531c2c!2sPort%20lotniczy%20Narsarsuaq!5e0!3m2!1spl!2spl!4v1667650635660!5m2!1spl!2spl"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                class="google-map" aria-label="Mapa z googlemaps z lokalizacją firmy"></iframe>
         </div>
     </div>
 </section>
@@ -411,8 +434,10 @@
         <p class="footer__text">&copy; <span class="footer__year"></span> by Tomasz Żuber</p>
     </div>
 </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./dist/js/navandyear.min.js"></script>
+    <script src="./dist/js/aboutus.min.js"></script>
     <script src="./dist/js/aossettings.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
